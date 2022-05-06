@@ -1,0 +1,39 @@
+<html>
+   <head>
+      <style>
+
+      </style>
+   </head>
+   <body>
+      <div class="parent">
+         <div class="child"></div>
+      </div>
+      <script>
+         var parent=document.querySelector(".parent");
+         parent.style.border="5px solid black";
+         parent.style.height="70%";
+         parent.style.width="70%";
+         parent.style.margin="auto";
+         parent.style.padding="10px";
+         parent.style.backgroundColor="aqua";
+
+         var child=document.querySelector(".child");
+         child.style.border="5px solid red";
+         child.style.height="50%";
+         child.style.width="50%";
+         child.style.textAlign="center";
+         child.style.backgroundColor="yellow";
+
+         parent.addEventListener("click",function(){
+            this.style.backgroundColor="red";
+         }); //parent div
+
+         child.onclick=xyz;
+         function xyz()
+         {
+            child.style.backgroundImage="linear-gradient(orange,white,green)";
+         }
+
+      </script>
+   </body>
+</html>

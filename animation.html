@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <style>
+      body{
+        background-image: radial-gradient(white,black);
+        transition-duration: 1s;
+        animation-name: bodyme;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+      div{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 50px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        text-shadow: 4px 5px 30px black;
+        height: 60px;
+        width: 100px;
+        background: cyan;
+        animation-name: move;
+        animation-duration: 10s;
+        animation-delay: 0.3s;
+        position: relative;
+        border-radius: 15px;
+        animation-iteration-count: infinite;
+
+      }
+      @keyframes bodyme{
+        0%{
+          background-image: radial-gradient(yellow,black);
+        }
+        25%{
+          background-image: radial-gradient(brown,black);
+        }
+        50%{
+          background-image: radial-gradient(red,black);
+        }
+        75%{
+          background-image: radial-gradient(yellow,black);
+        }
+        100%{
+          background-image: radial-gradient(aqua,black);
+        }
+      }
+      @keyframes move{
+        0%{
+          left: 0px;
+          transform: rotateZ(360deg);
+        }
+        25%{
+          transform: rotateZ(180eg);
+          top: 0px;
+          left: 1200px;
+          background: yellow;
+        }
+        50%{
+          transform: rotateZ(-180deg);
+          left: 1200px;
+          top: 500px;
+          background: white;
+          background-color: cyan;
+          color: green;
+        }
+        75%{
+          transform: rotateZ(180deg);
+          top: 500px;
+          left: 0px;
+        }
+        100%{
+          transform: rotateZ(-360deg);
+          left: 0px;
+          top: 0px;
+          background: orange;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>CSS</div>
+    <div></div>
+    <div></div>
+  </body>
+</html>

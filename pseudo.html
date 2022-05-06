@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            .brdr
+            {
+                border: 40px solid transparent;
+                border-image: url("user1 (1).jpg") round 50;
+                height: auto;
+                width: 300px;
+                margin: 10px;
+                padding: 10px;
+                
+            }
+            .true::after
+            {
+                content: "->>>> TRUE";
+                color: red;
+            }
+            .false::after
+            {
+                content: ">>>>>>>>>> False";
+                color: blue;
+            }
+            .tr::before
+            {
+                content: "->>>> TRUE";
+                color: red;
+            }
+            .fal::first-letter
+            {
+                /*content: ">>>>>>>>>> False";*/
+                color: blue;
+                font-size: 100px;
+                text-decoration: overline;
+            }
+            #hello
+            {
+                border: 50px solid;
+                font-size: 50px;
+                height: 200px;
+                width: 300px;
+                text-align: center;
+                padding: 10px;
+                color: transparent;
+                font-weight: bolder;
+                background: url("user1 (3).jpg");
+                background-clip: text;
+                -webkit-background-clip: text;
+                border-image: url("user1 (1).jpg") 50;
+                background-image: linear-gradient(red,green,blue,yellow,orange);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="brdr">
+            <p class="True">Birds can fly.</p>
+            <p class="false">Monkey can also fly.</p>
+            <p class="Tr">Birds can fly.</p>
+            <p class="fal">Monkey can also fly.</p>
+        </div>
+        <div id="hello">
+            <p id="tr"> Hello World</p>
+        </div>
+    </body>
+</html>

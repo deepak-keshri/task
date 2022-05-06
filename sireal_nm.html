@@ -1,0 +1,565 @@
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        
+        <script>
+var m,k=0,t=0,ti=-1,l1=1,c=-1,i,j,l=0;
+var nm;
+nm=prompt("Please Enter Some Text  :  ");
+l=nm.length; //lentth
+for(m=0;m<=l1*5;m++)
+{
+ if(m%40==0)
+  {
+   if(l>8)
+    {
+      l1=8;
+      l=l-l1;
+    }
+     else
+     l1=l;
+
+     if(t>0) //when m=36 then run.
+     {
+      ti=ti+8;   //starting second line with zero to manage character.
+     printf("\n\n");
+     }
+   k=0;   //Reason k=0 :- k starting 1.
+  m=0;  //AGAIN M IS ZERO
+ }
+t++;  //
+if(m%l1==0)   //For managing every character.
+ k++,c=ti,printf("\n");
+  c++;
+  printf(" ");
+
+if(nm[c]>=97&&nm[c]<=122)  //convert lowercase to uppercase.
+nm[c]=nm[c]-32;
+
+//printf("%ld ",l1);
+if(nm[c]==' ')
+printf("   ");
+
+switch(nm[c]) //stating switch.
+{
+case 'A':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=4;j++)
+ {
+  if((j==1||j==4)&&i>1||i==1&&(j==2||j==3)||i==3)
+   printf("A ");
+  else
+   printf("  ");
+ }
+ break;
+}
+break;
+
+case 'B':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=4;j++)
+ {
+  if((i==2||i==4)&&(j>1&&j<4)||(i==1||i==3||i==5)&&j==4)
+    printf("  ");
+   else
+   printf("B ");
+  }
+break;
+}
+break;
+
+case 'C':
+for(i=k;i<=5;i++)                   //    C C C
+{
+ for(j=1;j<=4;j++)
+ {
+ if((i>1&&i<5)&&j>1||(i==1||i==5)&&j==1)
+   printf("  ");
+   else
+   printf("C ");
+  }
+break;
+}
+break;
+
+case 'D':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=4;j++)
+ {
+  if((i>1&&i<5)&&(j>1&&j<4)||(i==1||i==5)&&j==4)
+  printf("  ");
+  else
+  printf("D ");
+ }
+break;
+}
+break;
+
+case 'E':
+for(i=k;i<=5;i++)
+{
+  for(j=1;j<=4;j++)
+  {
+   if(i==1 || i==3 || i==5 || j==1)
+    printf("E ");
+    else
+   printf("  ");
+   }
+break;
+}
+break;
+
+case 'F':
+for(i=k;i<=5;i++)
+{
+  for(j=1;j<=4;j++)
+  {
+   if(i==1 || i==3 || j==1)
+    printf("F ");
+    else
+   printf("  ");
+   }
+break;
+}
+break;
+
+case 'G':
+ for(i=k;i<=5;i++)
+ {
+  for(j=1;j<=5;j++)
+  {
+   if((i==1||i==5)&&(j==1)||(i==2)&&(j>1&&j<6)||i==3&&j==2||i==4&&(j>1&&j<5))
+    printf("  ");
+   else
+  printf("G ");
+ }
+break;
+}
+break;
+
+case 'H':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=4;j++)
+ {
+  if(i==3||j==1||j==4)
+  printf("H ");
+  else
+  printf("  ");
+ }
+break;
+}
+break;
+
+case 'I':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=3;j++)
+ {
+  if(i==1||j==2||i==5)
+  printf("# ");
+  else
+  printf("  ");
+ }
+break;
+}
+break;
+
+case 'J':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<5;j++)
+ {
+  if((i==1&&j>1&&j<5)||i==5&&j<3||j==3||i==4&&j==1)
+   printf("m ");
+  else
+  printf("  ");
+ }
+break;
+}
+break;
+
+case 'K':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=4;j++)
+ {
+  if(j==1||(i==1||i==5)&&j==4||(i==2||i==4)&&j==3||i==3&&j==2)
+//  if(j==1||(i==1||i==2||i==4||i==5)&&j==3||i==3&&j==2)
+  printf("K ");
+  else
+  printf("  ");
+ }
+break;
+}
+break;
+
+case 'L':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=4;j++)
+ {
+  if(j==1||i==5)
+  printf("L ");
+  else
+  printf("  ");
+ }
+break;
+}
+break;
+
+case 'M':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=5;j++)
+ {
+  if(j==1||j==5||i==2&&(j==2||j==4)||i==3&&j==3)
+  printf("M ");
+  else
+  printf("  ");
+ }
+break;
+}
+break;
+
+case 'N':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=5;j++)
+ {
+  if(j==1||j==5||i==j)
+  printf("N ");
+  else
+  printf("  ");
+ }
+break;
+}
+break;
+
+case 'O':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=5;j++)
+ {
+  if((i==j)||(6-i==j)||(i==2||i==4)&&j==3||i==3&&(j==2||j==4))
+  printf("  ");
+  else
+  printf("O ");
+ }
+break;
+}
+break;
+
+case 'P':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=4;j++)
+ {
+  if(j==1||(i==1||i==3)&&(j<=3)||i==2&&j==4)
+  printf("P ");
+  else
+  printf("  ");
+ }
+break;
+}
+break;
+
+case 'Q':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=6;j++)
+ {
+if(i==1&&(j==1||j==5)||i==2&&(j>1&&j<5)||i==3&&(j==2||j==4)||i==4&&(j==2||j==3)||(i<5&&j==6)||i==5&&j==1)
+  printf("  ");
+  else
+  printf("Q ");
+ }
+break;
+}
+break;
+
+case 'R':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=4;j++)
+ {
+  if(j==1||(i==1||i==3)&&(j>1&&j<4)||(i==2||i==4)&&j==4||i==5&&j==4)
+   printf("R ");
+  else
+   printf("  ");
+  }
+ break;
+}
+break;
+
+case 'S':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=4;j++)
+ {
+  if(i==1||i==3||i==5||j==1&&i<4||j==4&&i>3)
+  printf("S ");
+  else
+  printf("  ");
+  }
+break;
+}
+break;
+
+case 'T':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=5;j++)
+ {
+  if(i==1||j==3)
+  printf("T ");
+  else
+  printf("  ");
+ }
+break;
+}
+break;
+
+case 'U':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=4;j++)
+ {
+  if(i<5&&(j==1||j==4)||i==5&&(j>1&&j<4))
+  printf("U ");
+  else
+  printf("  ");
+ }
+break;
+}
+break;
+
+case 'V':
+for(i=k;i<=5;i++)
+{
+for(j=2;j<=i;j++)
+ printf(" ");
+ for(j=5;j>=i;j--)
+ {
+  if(j==5||j==i)
+  printf("V ");
+  else
+  printf("  ");
+  }
+ for(j=2;j<=i;j++)
+ printf(" ");
+break;
+}
+break;
+
+case 'W':
+for(i=k;i<=5;i++)
+{
+ for(j=2;j>=-2;j--)
+ {
+  if(abs(j)==2||abs(j)==1&&i==4||j==0&&i==3)
+  printf("W ");
+  else
+  printf("  ");
+  }
+break;
+}
+break;
+
+case 'X':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=5;j++)
+  {
+   if(i==j||6-i==j)
+    printf("X ");
+     else
+   printf("  ");
+  }
+break;
+}
+break;
+
+case 'Y':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=5;j++)
+  {
+   if(i==j&&i<4||i<4&&6-i==j||i>3&&j==3)
+    printf("Y ");
+     else
+   printf("  ");
+  }
+break;
+}
+break;
+
+case 'Z':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=5;j++)
+  {
+   if(i==1||i==5||6-i==j)
+    printf("Z ");
+     else
+    printf("  ");
+   }
+   break;
+  }
+  break;
+case '1':
+for(i=k;i<=5;i++)
+ {
+   for(j=1;j<=3;j++)
+   {
+    if(j==2||i==2&&j==1||i==5&&(j==1||j==3))
+     printf("# ");
+     else
+     printf("  ");
+   }
+ break;
+}
+break;
+case '2':
+for(i=k;i<=5;i++)
+ {
+   for(j=1;j<=4;j++)
+   {
+    if(i==5||6-i==j||i==1&&(j>1&&j<4)||i==2&&j==1)
+     printf("# ");
+     else
+     printf("  ");
+   }
+   break;
+ }
+ break;
+
+case '3':
+for(i=k;i<=5;i++)
+ {
+   for(j=1;j<=4;j++)
+   {
+    if((i==1||i==5)&&(j==2||j==3||j==1)||(i==2||i==4)&&(j==4)||i==3&&j==3)
+     printf("# ");
+     else
+     printf("  ");
+   }
+  break;
+ }
+ break;
+
+case '4':
+for(i=k;i<=5;i++)
+ {
+   for(j=1;j<=4;j++)
+   {
+    if(j==3||i==3||i==2&&j==2)
+     printf("# ");
+     else
+     printf("  ");
+   }
+  break;
+ }
+break;
+
+case '5':
+for(i=k;i<=5;i++)
+ {
+   for(j=1;j<=4;j++)
+   {
+    if(i==1||(i==3||i==5)&&j<4||i==2&&j==1||i==4&&j==4    )
+     printf("# ");
+     else
+     printf("  ");
+   }
+   break;
+ }
+ break;
+
+case '6':
+for(i=k;i<=5;i++)
+ {
+  for(j=1;j<=4;j++)
+   {
+    if(i==1&&j==4||i==2&&j==3||(i==3&&j>1&&j<4)||i==4&&(j==1||j==4)||i==5&&j>1&&j<4)
+     printf("# ");
+     else
+    printf("  ");
+   }
+ break;
+}
+break;
+
+case '7':
+for(i=k;i<=5;i++)
+ {
+   for(j=1;j<=4;j++)
+   {
+    if(j==3||i==1&&j<4||i==3&&j>1&&j<5)
+     printf("# ");
+     else
+     printf("  ");
+   }
+ break;
+}
+break;
+
+case '8':
+for(i=k;i<=5;i++)
+ {
+   for(j=1;j<=4;j++)
+   {
+    if((i==1||i==5)&&(j>1&&j<4)||(i==2||i==4)&&(j==1||j==4)||i==3&&(j==3||j==2))
+     printf("# ");
+     else
+     printf("  ");
+   }
+  break;
+ }
+break;
+
+case '9':
+for(i=k;i<=5;i++)
+{
+ for(j=1;j<=4;j++)
+  {
+  if(j==4||(i==1||i==3)&&(j>1&&j<5)||j==1&&i==2||i==5)
+   printf("# ");
+     else
+   printf("  ");
+  }
+ break;
+}
+break;
+
+case '0':
+for(i=k;i<=5;i++)
+ {
+   for(j=1;j<=4;j++)
+   {
+    if((i==1||i==5)&&(j==2||j==3)||(i>1&&i<5)&&(j==1||j==4))
+     printf("0 ");
+     else
+     printf("  ");
+   }
+  break;
+ }
+break;
+
+
+}//switch.
+}//Firts i loop.
+
+getch();
+}
+
+        </script>
+    </body>
+</html>

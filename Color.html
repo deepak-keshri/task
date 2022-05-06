@@ -1,0 +1,36 @@
+<!-- WAP to understand the working of hsl and rgb color-->
+<html>
+  <head>
+    <style>
+      body{
+        background-image: radial-gradient(circle,red 0%,yellow 20%,blue 30%,orange 50%);
+      }
+      #d1{
+        height: 100px;
+        width: 400px;
+        border: 4px groove black;
+        background-color: rgba(210,10,10,0.4);
+      }
+      #d2{
+        width: 400px;
+        height: 100px;
+        background-color: hsl(255,0%,0%,0.4);
+        border: 4px groove green;
+      }
+      span{
+        display: inline-block;
+        height: 100px;
+        width: 500;
+        border: 5px groove grey;
+        background-image: linear-gradient(to left bottom,orange 15%,white ,green );
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d1"></div><span></span>
+    <div id="d2"></div>
+    <script>
+
+    </script>
+  </body>
+</html>

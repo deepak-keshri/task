@@ -1,0 +1,68 @@
+ <html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <select id="slt">
+            <option>Sonbhadra</option>
+            <option>Varanasi</option>
+            <option>Prayagraj</option>
+            <option>Mirzapur</option>
+        </select><br>
+        <p>Your Select Name is :<span id="div"></span></p>
+        <p>---------------------------------------------------------------------------------------------------------------------------------</p>
+        
+        <p id="val">If you comes the mouse pointer then value is change</p>
+
+        <input type="text" id="txt" placeholder="Enter some Text" >
+        <div>Your Text is : <span  id="tds"></span></div><br>
+
+        <input type="text" id="focus" placeholder="I am Focus" ><br><br>
+
+        <p>Windows width : <span id="w_width"></span></p>
+        <p>Windows Height : <span id="w_height"></span></p>
+
+        <script>
+            var btn=document.getElementById("slt");
+            slt.addEventListener("change",function()
+            {
+               var v=document.getElementById("slt").value;
+               document.getElementById("div").innerHTML=v;
+            });
+
+            var val=document.getElementById("val");
+            val.addEventListener("mouseover",function()
+            {
+                val.innerHTML="Hello_Ji";
+            });
+/* ::::::::::>>>>>>>>>>>>>>>>>>>>> Right text in window  <<<<<<<<<<<<<<<<<::::::::::::::::::::::::::::::::::::::*/
+            var txt=document.getElementById("txt");
+            txt.addEventListener("mouseout",function()
+            {
+                txt=document.getElementById("txt").value;
+                document.getElementById("tds").innerHTML=txt;
+            });
+/* ::::::::::>>>>>>>>>>>>>>>>>>>>> Used Focus and blur element in Text Box  <<<<<<<<<<<<<<<<<::::::::::::::::::::::::::::::::::::::*/
+            var focus=document.getElementById("focus");
+            focus.addEventListener("focus",function()
+            {
+                focus.style.background="yellow";
+            });
+            focus.addEventListener("blur",function()
+            {
+                focus.style.background="white";
+            });
+
+/* ::::::::::>>>>>>>>>>>>>>>>>>>>> Windows Size properties used  <<<<<<<<<<<<<<<<<::::::::::::::::::::::::::::::::::::::*/
+            var w=document.getElementById("w_width");
+            var h=document.getElementById("w_height");
+            window.addEventListener("resize",function()
+            {
+                var w=document.getElementById("w_width").innerHTML=window.innerWidth;
+                var h=document.getElementById("w_height").innerHTML=window.innerHeight;
+            });
+        </script>
+    </body>
+</html>

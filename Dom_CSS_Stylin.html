@@ -1,0 +1,44 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="parent" id="PARENT">
+            <h2>Parent</h2>
+            <div class="child">
+                <h2>Child</h2>
+            </div>
+        </div>
+        <script>
+            var parent=document.querySelector(".parent");
+            var child=document.querySelector(".child");
+            var PARENT=document.querySelector("#PARENT").className;
+
+            //--------------------> Style Property <---------------------------------
+            /*parent.style.border="5px solid black";
+            child.style.border="3px solid red";
+            parent.style.width="50%";
+            parent.style.height="50%";
+            parent.style.padding="5px";
+            child.style.fontSize="30px";
+            child.style.padding="5px";
+            */
+            //-------------------> ClassName Property <----------------------------------
+            console.log(parent.className);
+            console.log(PARENT);
+            PARENT.className="Grand_Parent";
+            
+            console.log(parent.className);
+
+            //--------------------> Class List <---------------------------------------
+
+            document.querySelector(".child").classList.add("x","y","z","@");
+            console.log(child);   
+
+            document.querySelector(".child").classList.remove("x","y");
+            console.log(child);          
+            
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <title>Facebook</title>
+    <style>
+      *{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      body{
+        margin: auto;
+        text-align: center;
+        background-color: rgba(223, 223, 223, 0.986);
+      }
+      #parent{
+        background-color: rgb(44, 58, 119);
+        color: white;
+        height: 85px;
+      }
+      #fb{
+        font-size: 40px;
+        position: absolute;
+        top: 35px;
+        left: 190px;
+        
+      }
+      #parent1{
+        position: absolute;
+        left: 37%;
+        width: 350px;
+        
+        margin: 10px;
+        height: 450px;
+      }
+      .nm,.nm1{
+        border-radius: 5px;
+        outline: grey;
+        border: 1px solid grey;
+        height: 32px;
+        padding: 5px;
+        margin: 5px;
+        font-weight: bold;
+      }
+      .nm{
+        width: 160px;
+      }
+      .nm1{
+        width: 330px;
+      }
+      select{
+        height: 25px;
+      }
+      #sign{
+        height: 35px;
+        width: 170px;
+        top: 450px;
+        position: absolute;
+     
+        background-color: rgb(51, 124, 51);
+        color: white;
+        left: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <span id="fb">facebook</span>
+      <span id="log" style="position: absolute; right: 200px; top: 50px;background: rgb(46, 73, 148);">Log In to Existing Account</span>
+
+    </div>
+    <div id="parent1">
+      <h1>Create a new Account</h1>
+      <div style="position: absolute; left: 15px;top: 70px; font-weight: bold; font-size: 20px; color: grey;">Its quick and easy</div><br>
+      <input type="text" class="nm" placeholder="First Name">
+      <input type="text" class="nm" placeholder="Last Name"><br>
+      <input type="text" class="nm1" placeholder="Mobile Number or email Address"><br>
+      <input type="text" class="nm1" placeholder="New Password">
+      
+      <div style="position: absolute; left: 10px; color: grey;font-weight: bold; top: 240px;">Date of birth</div>
+      <select style="position: absolute; left: 10px;top: 270px;">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+      </select>
+
+      <select style="position: absolute; left: 50px;top: 270px;">
+        <option>January</option>
+        <option>Faburary</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>Octuber</option>
+        <option>Nevember</option>
+        <option>December</option>
+      </select>
+      <select style="position: absolute; left: 140px;top: 270px;">
+        <option>2000</option>
+        <option>2001</option>
+        <option>2003</option>
+        <option>2004</option>
+        <option>2005</option>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+        <option>2021</option>
+      </select><br>
+
+      <b style="left:10px; position: absolute; top: 295px; left: 10px; margin: 15px;color: grey;">Gender</b><br>
+      <div style="position: absolute; left: 10px;top: 340px;font-weight: bold;font-size: 20px;color: rgb(59, 57, 57);">
+        <input type="radio" class="gen">Female
+        <input type="radio" class="gen">Male
+        <input type="radio" class="gen">Custom<br>
+      </div>
+
+      <p style="position: absolute; top: 360px;color: rgb(51, 48, 48);">By Clicking sign up, you agree to aur <a href="#">Terms Data Policy and Cookie Policy</a>. You are 
+      recieve SMS notification from us and can opt out at any time</p>
+      <button id="sign">Sign Up</button>
+    </div>
+    
+  </body>
+</html>

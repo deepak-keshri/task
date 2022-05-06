@@ -1,0 +1,57 @@
+<html>
+  <title>Rounding Box</title>
+  <head>
+    <style>
+      #box{
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        position: relative;
+        animation-name: change;
+        animation-duration: 4.5s;
+        animation-iteration-count: infinite;
+        
+      }
+      @keyframes change
+      {
+        0%{
+          left: 0%;
+          top: 0%;
+        }
+        25%{
+          left: 92%;
+          top: 0%;
+        }
+        50%{
+          left: 92%;
+          top: 83%;
+
+        }
+        75%{
+          left: 0%;
+          top: 83%;
+        }
+        100%{
+          left: 0%;
+          top: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body onchange="Setme()">
+    <div id="box"></div>
+
+    <script>
+      function Setme()
+      {
+        let box=document.getElementById("box");
+        box.style.cssKeyframesRule
+        box.style.keyframes0%="left=0px,top=0px";
+        box.style.keyframes25%="left=400px,top=0px";
+        box.style.keyframes50%="left=400px,top=400px";
+        box.style.keyframes75%="left=0px,top=400px";
+        box.style.keyframes100%="left=0px,top=0px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+            div
+            {
+                border: 5px solid red;
+                margin: 5px;
+            }
+            /*P:first-child{
+                background: green;
+            }
+            P:last-child{
+                background: green;
+            }
+            or
+            P:first-of-type{
+                background: blue;
+            }
+            P:last-of-type{
+                background: blue;
+            }
+            p:only-child{
+                background: yellow;
+            }*/
+            p:nth-child(1)
+            {
+                background: green;
+            }
+            a{
+                text-decoration: none;
+                font-size: 50px;
+                font-weight: bold;
+                color: black;
+
+            }
+            a:hover
+            {
+                color: yellow;
+
+            }
+            a:active
+            {
+                color: green;
+            }
+            a:visited
+            {
+                color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>I am Only Child</p>
+        </div>
+        <div>
+            <p>I am Child 1</p>
+            <p>I am Child 2</p>
+            <p>I am Child 3</p>
+        </div>
+        <div>
+            <p>I am Child 1</p>
+            <p>I am Child 2</p>
+            <p>I am Child 3</p>
+        </div>
+        <p>I am Child 1</p>
+        <p>I am Child 2</p>
+        <p>I am Child 3</p>
+        <a href="#">ClickMe</a>
+    </body>
+</html>
